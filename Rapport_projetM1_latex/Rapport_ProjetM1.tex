@@ -1,0 +1,177 @@
+
+%Preambule
+
+\documentclass {report}
+
+% Import des extensions
+
+\usepackage{hyperref}%pour insérer des liens
+%\usepackage [francais]{minitoc}% permet de faire une table des matieres par chapitre
+\usepackage  [francais,english]{babel} %il permet l'adaptation de LaTeX du français.
+\usepackage [francais,nohints]{minitoc} % nohints permet d effacer l erreur des hints qu il y a quand on utilise les minitocs 
+\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{2}
+\setcounter{minitocdepth}{4}
+\usepackage [T1]{fontenc} %il permet de spécifier à LaTeX l'utilisation du codage de caractères T1
+\usepackage  [utf8]{inputenc} %gestion␣des␣accents␣
+%\usepackage[latin1]{inputenc} %un package il permet d'utiliser les caractères ISO 8859-1
+
+%\usepackage{listings} \lstset{ language=SQL, basicstyle=\small, numbers=left, numbersep=7pt, } %, numberstyle=\normalsize, 
+%L'environnement  lstlisting L'environnement lstlisting permet de mettre en forme de façon colorée et d'utiliser de nombreuses options pour afficher du code.
+
+\usepackage{verbatim} %L'environnement verbatim, accompagné du package du même nom, permet d'encadrer de gros volumes de code. Petit souci : il remplace les tabulations par des espaces.
+%\usepackage{setspace}
+\usepackage{parskip} % espace entre paragraphe
+\usepackage{framed}
+\usepackage{amssymb,amsmath,mathrsfs,mathtools}%package de math AMS et outils de math
+\usepackage{color} % couleur
+\usepackage{url}
+
+
+%\usepackage[french]{minitoc}% permet de faire une table des matieres par chapitre
+ %* Le package 'minitoc', disponible sur ftp://ftp.inria.fr/pub/TeX/CTAN/macros/latex/contrib/minitoc/, permet de construire une minitable des matières au début de chaque chapitre sous les classes 'book' et 'report'. Pour l'utiliser, il faut appeler les commandes \dominitoc avant la commande \tableofcontents habituelle. La commande \faketableofcontents permet de ne garder que les tables des matières locales et remplace alors la commande \tableofcontents. La commande \minitoc doit être appelée après chaque commande de début de chapitre \chapter dans lequel on veut inclure une table locale. A chaque appel de minitoc correspond un fichier .mtc<n> où n est le numéro du chapitre. Le compteur minitocdepth permet de fixer la profondeur des tables des matières désirées.
+
+%\usepackage{lipsum}%Imprime du texte. Le paramètre optionnel permet de varier le texte imprimé.
+
+\usepackage [pdftex]{graphicx} % gestion image
+\usepackage [top=2cm,bottom=2cm,left=4cm,right=4cm] {geometry}%pour gérer les marges et dimension,la mise en page
+
+%\usepackage{lastpage}%Il est possible de faire référence au nombre total de pages du document.  our obtenir un compteur de pages du type 1/3, 2/3, il faut charger dans le préambule du document le package lastpage.sty par la commande : usepackage{lastpage}Dans un champ de l’en-tête, il suffit alors d’insérer la commande :thepage/\pageref{LastPage}
+
+%\usepackage[Sonny,Lenny]{fncychap} %Pour de beaux titres de chapitres dans vos documents, mettez dans le préambule \usepackage[Lenny]{fncychap} % Sonny, Lenny, Glenn, Conny, Rejne, Bjarne
+%\usepackage{fancyhdr}%pour?les?en-têtes
+
+
+% ajoute (entre autre) la bibliographie dans la table des matieres 
+\usepackage[nottoc]{tocbibind}
+\usepackage{natbib}
+ 
+% biblio ordonnee classique
+%\bibliographystyle{unsrt}
+ 
+
+\usepackage{ragged2e} % justifie le texte
+
+\hyphenation{intrusion}
+\hyphenation{représente}
+\hyphenation{automatique}
+\hyphenation{exploration}
+\hyphenation{construction}
+\hyphenation{Utiliser}
+\hyphenation{détection}
+\hyphenation{outils}
+\hyphenation{données}
+
+
+%\usepackage{array}
+%\usepackage{titlesec}%pour?les?sections
+%\usepackage{titletoc}%pour?la?table?des?matières
+%\usepackage{titling}%pour?le?
+
+%\usepackage{hyperref}[pdftex]
+%\usepackage[french]{varioref}
+
+%\setcounter{secnumdepth}{1}
+%\addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}} %change le nom de la table de matieres
+
+%fin 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%partie concernant la gestion des entêtes
+%\pagestyle {fancy}
+%\renewcommand\headrulewidth{2pt} %Ligne de séparation entre l'en-tête et le corps ,Pour forcer l’affichage d’une ligne horizontale, il suffit d’utiliser la commande \renewcommand{\headrulewidth}{1pt}, pour les en-têtes et \renewcommand{\footrulewidth}{1pt}, pour les pieds de page. détermine l'épaisseur du trait. Par défaut
+%\renewcommand\headheight{2cm}
+
+%\fancyhead[L]{\includegraphics [height=10mm,width=10mm] {ODM}} %haut de page gauche
+%\fancyhead[R]{\includegraphics [height=10mm,width=10mm] {thumb-LOGO-UCAD}} %haut de page droite
+
+%\fancyhead[C] {\leftmark}
+%\fancyfoot[R]{\thepage/\pageref{LastPage}}
+
+%\renewcommand\footrulewidth{2pt}%Ligne de séparation entre le corps et le pied de page,pour ne pas afficher de ligne horizontale, il suffit d’utiliser la commande \renewcommand{\headrulewidth}{0pt}, pour les en-têtes et \renewcommand{\footrulewidth}{0pt}, pour les pieds de page.
+%\fancyfoot[C]{\thepage}
+%\lfoot{Section \thesection}
+
+%fin
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Redaction du document et enumerations des differentes parties 
+%Corps du document
+%Environnement
+
+\begin{document}
+% preparation des minitocs
+\dominitoc
+%\doparttoc
+
+  %\dominitoc
+	
+
+\pagenumbering{roman} % numerote les page en chiffre romain 
+% inclusion des chapitres
+	
+
+  %\include{Rtitle}
+	
+	\newpage
+	\null 
+	\thispagestyle{empty}
+	
+	
+	%\include{Rthanks}
+	
+	%\include{RabstractE}
+
+	%\include{Rabstract}
+
+	\tableofcontents %Insertion de lignes de pointillés avec dotfill
+
+  %\setcounter{secnumdepth}{1}
+	%\setcounter{tocdepth}{2} % On ajuste la profondeur
+
+
+  %\selectlanguage {french}
+	%\addcontentsline{toc}{chapter}{Table des Figures}
+	\listoffigures
+	
+	%\selectlanguage {french}
+	%\addcontentsline{toc}{chapter}{Liste des Tableaux}
+	\listoftables
+
+	%\include{Rquote}
+	
+	\pagenumbering{arabic}
+	
+	%\include{Rintroduction}
+
+
+	%\include{Partie1}
+	
+
+	
+	\include{Partie2}
+	%\include{Partie4}
+	%\include{Partie5}
+	%\include{Conclusion}
+	
+ % \appendix
+
+	
+  %\include{Annexe}
+	
+ 	\bibliographystyle{alpha} %classe les entrées par ordre alphabétique et les numérote en conséquence 
+
+	\bibliography{biblio}
+	
+\end{document}
+
+%Fin Redaction du document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
