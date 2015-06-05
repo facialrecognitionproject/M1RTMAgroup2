@@ -6,7 +6,7 @@ Created on Wed Jun 03 10:25:07 2015
 """
 
 import sys
-sys.path.append("G:\\ProjetV1.0")
+sys.path.append("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation")
 # import numpy and matplotlib colormaps
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,7 +40,7 @@ def read_img(path, sz=None):
 	return [X,y]
  
  
-[X,y] = read_img("G:\\ProjetV1.0\dataBaseImages")
+[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\\dataBaseImages")
 
 def asRowMatrix(X):
 	if len(X) == 0:

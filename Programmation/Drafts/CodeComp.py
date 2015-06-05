@@ -6,7 +6,7 @@ Created on Wed Jun 03 10:25:07 2015
 """
 
 import sys
-sys.path.append("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\PrototypeEigenfaces")
+sys.path.append("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation")
 # import numpy and matplotlib colormaps
 import numpy as np
 #import matplotlib.pyplot as plt
@@ -113,7 +113,7 @@ def matriceCorrNorm(X):
 #c=matriceCorrNorm(X)
     
 #####Main    
-[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\PrototypeEigenfaces")
+[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\\dataBaseImages")
 A=X[1];
 matrix=vectorsToIMatrix(X);
 #moyenne=computeMeanImage(X);
