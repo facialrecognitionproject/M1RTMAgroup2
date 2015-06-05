@@ -41,7 +41,7 @@ def read_img(path, sz=None):
  
  
 [X,y] = read_img("/home/SP2MI/gsadel01/Documents/eigenfaces/IMG_BDD")
-A=X[1];
+#A=X[1];
 #print(A)
 #print(X)
 #print(y)

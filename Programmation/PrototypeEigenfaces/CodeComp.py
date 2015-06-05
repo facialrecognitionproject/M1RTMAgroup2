@@ -6,7 +6,7 @@ Created on Wed Jun 03 10:25:07 2015
 """
 
 import sys
-sys.path.append("/home/SP2MI/gsadel01/Documents/eigenfaces")
+sys.path.append("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\PrototypeEigenfaces")
 # import numpy and matplotlib colormaps
 import numpy as np
 #import matplotlib.pyplot as plt
@@ -14,8 +14,8 @@ import numpy as np
 import os, sys, errno
 import PIL.Image as Image
 
-
-
+#fonction permettant de charger toutes les images utilisées en parcourant 
+#la base de données qui sont des répertoires par sujet 
 def read_img(path, sz=None):
 	c = 0
 	X,y = [], []
@@ -39,19 +39,17 @@ def read_img(path, sz=None):
 			c = c+1
 	return [X,y]
  
- 
-[X,y] = read_img("/home/SP2MI/gsadel01/Documents/eigenfaces/IMG_BDD")
-A=X[1];
-#print(A)
-#print(X)
-#print(y)
-
+#fonction permettant de transformer un matrice d'image en un vecteur horizontal
+ #nécessaire pour former la matrice de toutes les images
 def matrixToVector(A):
     B=np.hstack(A);
     return B
-    
-def vectorsToIMatrix(X,):
-    n=X.length;
+
+#fonction permettant d'obtenir un matrice de toutes les images sous forme de vecteurs
+#représentant les colonnes de la matrice    
+def vectorsToIMatrix(X):
+    n^.arra
+    [irow,n]=X.shape();
     imageMatrix=[];
     for i in range (n):
         imageMatrix.append=[matrixToVector(X[i])];
@@ -113,3 +111,13 @@ def matriceCorrNorm(X):
     return matrice_corr_norm
     
 #c=matriceCorrNorm(X)
+    
+#####Main    
+[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\PrototypeEigenfaces")
+A=X[1];
+matrix=vectorsToIMatrix(X);
+#moyenne=computeMeanImage(X);
+#print(matrix)
+print(A)
+#print(X)
+#print(y)

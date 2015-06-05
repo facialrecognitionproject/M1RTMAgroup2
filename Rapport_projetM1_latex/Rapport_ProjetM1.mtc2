@@ -1,0 +1,23 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Facial Recognition}{\reset@font\mtcSfont 4}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Facial recognition process}{\reset@font\mtcSSfont 4}{subsection.2.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}The methods used for face recognition}{\reset@font\mtcSSfont 5}{subsection.2.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.1.2.1}Global methods}{\reset@font\mtcSSSfont 5}{subsubsection.2.1.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode }{\reset@font\mtcPfont 5}{section*.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.1.2.2}Local methods (Geometric)}{\reset@font\mtcSSSfont 5}{subsubsection.2.1.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode }{\reset@font\mtcPfont 5}{section*.10}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Eigenfaces}{\reset@font\mtcSfont 6}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Presentation of Eigenfaces}{\reset@font\mtcSSfont 6}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Procedure}{\reset@font\mtcSSfont 6}{subsection.2.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode }{\reset@font\mtcPfont 6}{section*.11}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}EigenFaces logigram }{\reset@font\mtcSSfont 6}{subsection.2.2.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode }{\reset@font\mtcPfont 7}{section*.12}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Benefits and deficiencies}{\reset@font\mtcSSfont 8}{subsection.2.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.1}Benefits}{\reset@font\mtcSSSfont 8}{subsubsection.2.2.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.4.2}Deficiencies}{\reset@font\mtcSSSfont 8}{subsubsection.2.2.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Fisherfaces}{\reset@font\mtcSfont 9}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Linear Discriminant Analysis (LDA)}{\reset@font\mtcSSfont 9}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}LDA for recognition}{\reset@font\mtcSSfont 9}{subsection.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.1}Learning phase}{\reset@font\mtcSSSfont 9}{subsubsection.2.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.2}Test phase or test stage}{\reset@font\mtcSSSfont 10}{subsubsection.2.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.3}Fisherfaces logigram }{\reset@font\mtcSSSfont 11}{subsubsection.2.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.4}Benefits and deficiencies}{\reset@font\mtcSSSfont 11}{subsubsection.2.3.2.4}}
