@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.28)  5 JUN 2015 14:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.28)  5 JUN 2015 16:26
 entering extended mode
 **Rapport_ProjetM1.tex
 
@@ -684,9 +684,7 @@ LaTeX Warning: Label `centrage' multiply defined.
 
 )
 ("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Rapport_projetM1_latex\Par
-tie5.aux")
-("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Rapport_projetM1_latex\Par
-tie6.aux"))
+tie5.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
 LaTeX Font Info:    ... okay on input line 110.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
@@ -1021,19 +1019,25 @@ tie4.aux")
 tie5.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
-Package rerunfilecheck Info: File `Rapport_ProjetM1.out' has not changed.
-(rerunfilecheck)             Checksum: CF1E43CF9A64832F09F69B8B38BA25E3;2064.
 
+
+Package rerunfilecheck Warning: File `Rapport_ProjetM1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Rapport_ProjetM1.out':
+(rerunfilecheck)             Before: CF1E43CF9A64832F09F69B8B38BA25E3;2064
+(rerunfilecheck)             After:  0F63EF8D40D444FF63D5F48F1EDB0D1B;2056.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 10244 strings out of 493921
- 146149 string characters out of 3154081
+ 10235 strings out of 493921
+ 145907 string characters out of 3154081
  261448 words of memory out of 3000000
- 13000 multiletter control sequences out of 15000+200000
+ 12999 multiletter control sequences out of 15000+200000
  20278 words of font info for 42 fonts, out of 3000000 for 9000
  850 hyphenation exceptions out of 8191
  29i,10n,30p,808b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1049,9 +1053,9 @@ D:/MiKTeK1/fonts/type1/public/cm-super/sfbx2488.pfb><D:/MiKTeK1/fonts/type1/pub
 lic/cm-super/sfcc1000.pfb><D:/MiKTeK1/fonts/type1/public/cm-super/sfrm1000.pfb>
 <D:/MiKTeK1/fonts/type1/public/cm-super/sftc1000.pfb><D:/MiKTeK1/fonts/type1/pu
 blic/cm-super/sftt1000.pfb><D:/MiKTeK1/fonts/type1/urw/ncntrsbk/uncbi8a.pfb>
-Output written on Rapport_ProjetM1.pdf (18 pages, 541907 bytes).
+Output written on Rapport_ProjetM1.pdf (18 pages, 538329 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,7 +15,8 @@ import os, sys, errno
 import PIL.Image as Image
 
 
-
+#fonction permettant de récupérer toutes les images en parcourant la base de données répartie en dossier et sous dossier par sujet
+#elle télécharge les images en liste
 def read_img(path, sz=None):
 	c = 0
 	X,y = [], []
@@ -40,8 +41,10 @@ def read_img(path, sz=None):
 	return [X,y]
  
  
-[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\\dataBaseImages")
 
+
+
+#fonction permettant de transformer les listes ou matrices d'images en vecteur répartis en colonnes dans une matrice
 def asRowMatrix(X):
 	if len(X) == 0:
 		return np.array([])
@@ -51,8 +54,7 @@ def asRowMatrix(X):
           
 	return mat
 
-matImg=asRowMatrix(X)
-print matImg
+
 
 
 
@@ -65,8 +67,7 @@ def computeMeanImage(matImg):
     meanImage=np.mean(matImg, axis=0)
     return meanImage
 
-MU= computeMeanImage(matImg)
-print 'Moyenne de limage  :\n',MU
+
 ##
 # #fonction qui centre les images de la base
 ##cette fonction permet de realiser le centrage de chaque image
@@ -76,8 +77,6 @@ print 'Moyenne de limage  :\n',MU
 def computeCentredImage(q, p):
     matImg=q-p
     return matImg
-CenImg=computeCentredImage(matImg, MU)
-print 'Image centré  :\n',CenImg
 
 
     
@@ -102,8 +101,7 @@ def computeEigenComponent(S):
 def matrixCorr(A):
     matrice_corr = np.cov(A)
     return matrice_corr    
-correlMatrix= matrixCorr(CenImg)
-print 'matrice de correlation :\n', correlMatrix
+
 #   
 ##cette fonction calcule la matrice de correlation normalisée
 def matrixCov(H):
@@ -121,7 +119,7 @@ def analyseComponents():
     print '****************** PrincipalesanalyseComponents ******************'
 
 
-    Subjects = np.array(['Subject '+str(num) for num in np.arange(1,49)])
+    Subjects = np.array(['S '+str(num) for num in np.arange(1,399)])
 
     matImg=asRowMatrix(X)
  
@@ -180,7 +178,7 @@ def analyseComponents():
     plt.plot(projections_x, projections_y, 'ro', linewidth=0.5)
 #    plt.plot(nvx_projections_x, nvx_projections_y, 'ro', linewidth=0.5)
     for idx, subj in enumerate(Subjects):
-     plt.gca().text(projections_x[idx], projections_y[idx], subj, color='black', ha='left', va='bottom', fontweight='bold')
+        plt.gca().text(projections_x[idx], projections_y[idx], subj, color='black', ha='left', va='bottom', fontweight='bold')
     plt.grid(True)
     plt.xlabel('Axe 1')
     plt.ylabel('Axe 2')
@@ -188,8 +186,21 @@ def analyseComponents():
 #    plt.axis([-3.5, 3.5, -3.5, 3.5])
     plt.show()
     
-    
-    
+[X,y] = read_img("C:\Users\Guy Florent\Documents\GitHub\M1RTMAgroup2\Programmation\dataBaseImages")    
+
+matImg=asRowMatrix(X)
+print matImg
+
+MU= computeMeanImage(matImg)
+print 'Moyenne de limage  :\n',MU
+
+CenImg=computeCentredImage(matImg, MU)
+print 'Image centré  :\n',CenImg
+
+correlMatrix= matrixCorr(CenImg)
+print 'matrice de correlation :\n', correlMatrix  
+
+  
 def main(argv):
     plt.close('all')
     np.set_printoptions(precision=3, suppress=True)
