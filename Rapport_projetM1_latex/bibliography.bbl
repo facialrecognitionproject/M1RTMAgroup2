@@ -1,0 +1,74 @@
+\begin{thebibliography}{10}
+
+\bibitem{ref3}
+BETTAHAR Abdessettar and SABER Fathi.
+\newblock {\em MEMOIRE MASTER ACADEMIQUE, Extraction des caract\'eristiques
+  pour l analyse biom\'etrique d’un visage}.
+\newblock UNIVERSITE KASDI MERBAH OUARGLA Facult\'e des Nouvelles technologies
+  de l information et de la communication, 15 Juin 2014.
+
+\bibitem{ref11}
+Peter~N. Belhumeur, Joao~P. Hespanha, and David~J. Kriegman.
+\newblock Eigenfaces vs. fisherfaces: Recognition using class specific linear
+  projection, ieee transactions on pattern analysis and machine intelligence,
+  vol. 19, no. 7,.
+\newblock JULY 1997.
+
+\bibitem{ref12}
+W~Zhao. Belhumeur, JR~Chellappa, and PJ~Philips. Kriegman.
+\newblock Face recognition: A literature suvey.
+\newblock December 2003.
+
+\bibitem{ref4}
+Harry Chao.
+\newblock {\em Eigenfaces and Fisherfaces}, Mai 2010.
+
+\bibitem{ref9}
+SciPy developers.
+\newblock Numpy and scipy documentation, Mai 2015.
+\newblock http://docs.scipy.org/doc/.
+
+\bibitem{ref8}
+Python~Software Foundation.
+\newblock Python 2.7.10 documentation, Mai 2015.
+\newblock https://docs.python.org/2/.
+
+\bibitem{ref13}
+CHELALI FZ and Mr~DJERADI et~Mme~DJERADI.
+\newblock Mise en place d'un syst\`eme de reconnaissance facial bas\'e sur
+  l'approche statistique analyse en composantes principales d\'evelopp\'ee sous
+  l'environnement matlab.
+\newblock 2005.
+
+\bibitem{ref10}
+Tal Hassner and Lihi Zelnik-Manor.
+\newblock Principal component analysis, eigenfaces and fisher discriminant.
+
+\bibitem{ref2}
+Houda Ma\^amatou.
+\newblock {\em MEMOIRE DE MASTER de recherche, Reconnaissance et mappage des
+  expressions faciales vers un mod\`ele virtuel}.
+\newblock Universit\'e de Sousse, Ecole Nationale d’Ing\'enieurs de Sousse,
+  2012.
+
+\bibitem{ref7}
+Math Programming.
+\newblock Eigenfaces, for facial recognition, Mai 2015.
+\newblock http://jeremykun.com/2011/07/27/eigenfaces/.
+
+\bibitem{ref5}
+Dewi~Agushinta R. and Indri Septadepi.
+\newblock {\em Face Recognition System Using Eigenface Method based on Facial
+  Component Region}, Mai 2010.
+
+\bibitem{ref6}
+safaribooksonline.
+\newblock Face recognition using eigenfaces or fisherfaces, Mai 2015.
+\newblock
+  https://www.safaribooksonline.com/library/view/mastering-opencv-with/9781849517829/ch08.html.
+
+\bibitem{ref}
+Naotoshi Seo.
+\newblock Eigenfaces and fisherfaces.
+
+\end{thebibliography}

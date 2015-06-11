@@ -27,7 +27,8 @@
 \usepackage{color} % couleur
 \usepackage{url}
 
-
+%\usepackage{graphicx} 
+%\usepackage{pdfpages}
 %\usepackage[french]{minitoc}% permet de faire une table des matieres par chapitre
  %* Le package 'minitoc', disponible sur ftp://ftp.inria.fr/pub/TeX/CTAN/macros/latex/contrib/minitoc/, permet de construire une minitable des matières au début de chaque chapitre sous les classes 'book' et 'report'. Pour l'utiliser, il faut appeler les commandes \dominitoc avant la commande \tableofcontents habituelle. La commande \faketableofcontents permet de ne garder que les tables des matières locales et remplace alors la commande \tableofcontents. La commande \minitoc doit être appelée après chaque commande de début de chapitre \chapter dans lequel on veut inclure une table locale. A chaque appel de minitoc correspond un fichier .mtc<n> où n est le numéro du chapitre. Le compteur minitocdepth permet de fixer la profondeur des tables des matières désirées.
 
@@ -161,17 +162,28 @@
 	\include{Partie3}
 	\include{Partie4}
 	\include{Partie5}
-	%\include{Partie6}
-	%\include{Conclusion}
+	
+
+	
+	\include{Conclusion}
+\include{Bibliograph}
+%\bibliographystyle{plain} % Le style est mis entre accolades.
+%\bibliography{mabiblio} % mon fichier de base de données s'appelle mabibli.bib
+%\includegraphics[2]{bibliography.pdf}
+%\includepdf[]{bibliography.pdf}
+	\include{Partie6}
 	
  % \appendix
 
 	
   %\include{Annexe}
-	
- 	\bibliographystyle{alpha} %classe les entrées par ordre alphabétique et les numérote en conséquence 
+\newpage	
 
-	\bibliography{biblio}
+%ma bibliografy \cite{ref}
+  %\includepdf[2]{bibliography.pdf}
+ 	%\bibliographystyle{plain} %classe les entrées par ordre alphabétique et les numérote en conséquence 
+
+	%\bibliography{mabiblio}
 	
 \end{document}
 

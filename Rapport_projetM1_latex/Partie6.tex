@@ -1,23 +1,104 @@
-drafts\subsection{Difficultés rencontrés}
+\chapter*{Annexes}
 
-Durant notre projet, nous nous sommes imposé des objectifs. Ces objectifs ont été suivis, nous avions établi un planning prévisionnel pour travailler de façon structurée. Tout au long de notre projet les difficultés rencontrées ont été de deux ordres : des difficultés techniques et des difficultés d'organisation.
-\paragraph{} 
-La réalisation d'un programme (logiciel) n'est parfois pas très aisée. Néanmoins nous avons pu obtenir quelques informations en cherchant sur Internet. 
-On peut évoquer par exemple les difficultés de conception. Il fallait  tout d’abord définir une façon de structurer le programme d’une manière  la plus claire possible et essayer d'être cohérent dans l'ensemble des codes.
+Before creating functions,we imported different libraries.
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{import_bibliotheque}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+\label{read_}%
+\end {center}
+\end{figure}
+\\The module sys gives direct acces to the arguments of the command line.
+\\The module numpy is a digital library providing efficient support for large multidimensional arrays,and high-level mathematical funtiuns as linear algebra,statistics ...
+\\The module Matplotlib is a library programming language that combined with python library numpy and scipy is a powerfull tool for tracing and visualizing data.
+\section{Eigenfaces functions}
+In this part ,we will put the different functions and their explenations
+\begin{itemize}
+\item Function used to load  images from directories
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{fonc_ReadImg}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+\label{read_}%
+\end {center}
+\end{figure}
+\\This function has input the full path to load all the images of the database.
+It returns X which is a list of all the combined images and y which is the subscript i of all images for the subject i.
+%\paragraph{}
+\newpage
 \paragraph{}
-Une des difficultés les plus importantes était une mauvaise compréhension du concept des différentes méthodes utilisées pour la mise en place de notre algorithme. En effet, chacun avait compris d’une manière différente aux autres.
+\item  Function used to transform matrix to vector
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{fonc_marixVectors}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+\label{read_}%
+\end {center}
+\end{figure}
+\\This function transforms an  images matrix  as a vector. It takes as input a matrix A and returns a vector mat.
+\\The function vstack   returns  an vertical vector.
 \paragraph{}
-Quant aux difficultés de programmation, elles sont venues principalement du fait qu’on n’avait pas tous une base bien fondé sur la programmation.
+\item Function for calculating the average and centering all images
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{fonc_mean_and_centred_img}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+\label{read_}%
+\end {center}
+\end{figure}
+\\The function ComputeMeanImage takes as input the  matrix matImg and returns the average image for the  learning base.
+\\ The function ComputeCentredImage center each image .The  average image is subtracted from each image
+\\It returns back matIm:corresponding to the result of the image centered.
+\item The function for calculating the covariance matrix
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{fonc_matrix_cov_and_corr}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+\label{read_}%
+\end {center}
+\end{figure}
+\\corrcoef  standardize the covariance matrix.
+\newpage
+\item Functions for calculating specific elements
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{fonc_print_and_compute_eigenvector_eigenvalue}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+%\label{read_}
+\end {center}
+\end{figure}
+%\paragraph{}
+\\The function printEigenComponent print eigenvalues and eigenvectors.
+\\The function computeEigenComponent calculates  eigenvalues and eigenvectors. They are computed with the normalized covariance matrix.
 \paragraph{}
-Une autre difficulté majeur rencontré était lié par rapport au fait que chacun devait s’occupé d’une partie du programme, donc on devait mettre en place un moyen de partage pour synchroniser nos codes et ceci nous a un peu retardé car on ne maitrisait pas le fonctionnement de l’outil de partage (GitHub).
-Dans ce projet, nous avons rencontré surtout des difficultés d'organisation pour la gestion de projet. En effet, comme nous l’avons déjà dit, nous nous sommes imposé des objectifs et nous avions établi un planning prévisionnel pour travailler de façon structurée, mais toute fois de nombreuses tâches secondaires, imprévues et imprévisibles apparaissaient au fur et à mesure.
-Faire face à ces difficultés nous a permis d'en savoir plus sur les deux principaux domaines traités par notre projet, à savoir le traitement d’image et la programmation. Nous avons donc rencontré chacun des difficultés lorsque notre projet nous faisait aborder des domaines pas forcément en relation avec nos formations initiales. 
-\paragraph{}
-Enfin, ces difficultés rencontrées peuvent nous être utiles pour la réalisation de futurs travaux. Celles-ci pourront donc être appréhendées lors d'un autre projet.
+\item Main funtion gathering invocation of other computing functions 
+\begin{figure}[bth]%[!ht]
+\begin{center}
+\includegraphics[scale=0.75]{affich_MeanImg}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+%\label{read_}
+\end {center}
+\end{figure}
+\\This function allows to call others functions and create projection axes of eigenvectors and we also saved the average image.
+%\clearpage
+%\begin{figure}[bth]%[!ht]
+%\begin{center}
+%\includegraphics[scale=0.75]{fonction_pca1}%[height=70mm,width=70mm]
+%\caption{\textbf{jbbv}}%
+%\url {http://www.google.fr/}
+%\label{read_}
+%\end {center}
+%\end{figure}
+%\paragraph{}
 
-\subsection{Bilan}
 
-Ce projet nous a permis d’acquérir une certaine maturité dans le travail et nous a fait comprendre l’importance de la planification, de l’organisation, et de la rigueur à avoir dans un projet. De plus, ce projet nous a également donné la satisfaction de réaliser un projet en groupe ou chacun a pu faire profiter aux autres de ses propres compétences et par la même occasion de les développer.
-\paragraph{}
-Nous avons pu voir que c'était une expérience très favorable pour notre avenir car cette
-expérience nous a bien fait comprendre la complexité d’un projet à gérer, mais aussi la difficulté d’entente au sein d’un groupe.
+\end{itemize}
+
+
